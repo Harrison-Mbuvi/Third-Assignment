@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #646E7A;
+    font-weight: bold;
+}
+
+.main {
+    display: flex;
+    margin: 40px 0;
+}
+
+.form-section {
+    flex: 1;
+    background-color: #fff;
+    padding: 40px;
+}
+
+.info-section {
+    width: 400px;
+    background-color: #1179BF;
+    color: #fff;
+    padding: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form-group input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.form-group input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    margin-right: 10px;
+}
+
+.form-group button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #038E7D;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #038E7D;
+}
+
+.form-group p {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.info-section h3 {
+    margin-bottom: 10px;
+}
+
+.info-section .price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.info-section .features {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.info-section .features li {
+    margin-bottom: 10px;
+}
+
+.info-section .quote {
+    font-style: italic;
+    border-left: 4px solid #fff;
+    padding-left: 10px;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        margin-top: 20px;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .info-section {
+        width: 100%;
+    }
+}
